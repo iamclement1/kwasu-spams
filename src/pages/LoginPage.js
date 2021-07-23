@@ -47,7 +47,9 @@ export default function LoginPage() {
           <button className="bg-green-800 hover:bg-green-400 text-xs text-white w-full mt-4 mb-7 focus:outline-none p-2">
             Login
           </button>
-          <h2>Not registered? <Link to='/register'>Register here</Link></h2>
+          <h2>
+            Not registered? <Link to="/register">Register here</Link>
+          </h2>
         </div>
       </div>
     </main>

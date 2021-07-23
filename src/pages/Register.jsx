@@ -1,11 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Register() {
   return (
-  <>
-    <h2>I am register page.</h2>
-    <span>Already registered? <Link to='/'>Sign in now</Link></span>
-  </>
-  )
+    <>
+      <h2>I am register page.</h2>
+      <span>
+        Already registered? <Link to="/">Sign in now</Link>
+      </span>
+    </>
+  );
 }

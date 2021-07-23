@@ -2,17 +2,19 @@ import React from "react";
 
 export default function LoginPage() {
   return (
-    <main className="h-screen flex justify-center items-center">
+    <main className="h-screen flex justify-center items-center bg-green-300">
       <div className="flex flex-col relative w-full md:m-20">
         <div className="bg-green-800 text-white sm:rounded-md p-5 m-18 shadow-2xl mt-7 ">
-          <h1 className="text-4xl">Welcome</h1>
+          <h1 className="text-4xl">Welcome Back</h1>
           <p className="text-xs">
             Student Project Allocation Management System
           </p>
           <p className="text-xs sm:mt-32">Department of Computer Science</p>
         </div>
         <div className="sm:absolute md:absolute p-5 right-12 bg-white sm:rounded-md p-2 sm:w-70 flex flex-col justify-center items-center shadow-xl">
-          <h2 className="text-green-800 mb-3 text-sm font-bold ">Log In</h2>
+          <h2 className="text-green-800 mb-3 md:text-3xl font-semibold ">
+            Log In
+          </h2>
           <div className="bg-green-800 shadow-xl rounded-full w-12 h-12"></div>
           <input
             type="text"

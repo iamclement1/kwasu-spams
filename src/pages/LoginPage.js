@@ -4,62 +4,31 @@ import Logo from "../assets/images/logo.png";
 
 export default function LoginPage() {
   return (
-    <div className="h-screen px-36 bg-white">
-      {/** Header */}
-      <header className="flex justify-between py-8">
-        <div>
-          <img src={Logo} alt="Logo" className="h-16 w-14" />
-        </div>
-        <div className="text-black">
-          Student Project Allocation Management System
-        </div>
-      </header>
-
-      <main className="pt-24 flex justify-center">
-        <div className="w-full sm:w-1/2 md:w-3/5 lg:w-3/6 py-6 border border-gray-300">
-          <h1 className="text-2xl text-center font-bold text-green-900">
-            Welcome Back
-          </h1>
-          <h2 className="text-center text-green-800">
-            Lorem ipsum dolor sit amet.
-          </h2>
-          {/* username input */}
-          <div className="flex justify-center">
-            <div className="w-full md:w-1/2 ">
-              <div className="justify-center w-full pt-12 max-w-xs px-8">
-                <label htmlFor="" className="block font-semibold">
-                  Username:
-                </label>
-                <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  type="text"
-                  placeholder="Username"
-                />
-              </div>
-              {/* password input */}
-              <div className="justify-center w-full max-w-xs px-8">
-                <label htmlFor="" className="block font-semibold">
-                  Password:
-                </label>
-                <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  type="text"
-                  placeholder="**********"
-                />
-              </div>
-
-              {/* login button */}
-              <div className="justify-center w-full max-w-xs px-8 pt-2">
-                <div className=" justify-center text-center">
-                  <button className="bg-green-900 text-white p-2 hover:bg-green-600 w-full rounded">
-                    Login
-                  </button>
-                </div>
-              </div>
-            </div>
+    <div className="h-screen flex flex-row bg-white">
+      <div className=" w-full bg-white border border-red-600">
+        {/* logo & text */}
+        <header className="flex justify-between py-16 px-16">
+          <div>
+            <img src={Logo} alt="logo" className="h-18 w-16" />
           </div>
-        </div>
-      </main>
+          <div className="font-bold justify-center items-center text-xl pt-3 text-green-800">
+            <h2>Student Project Allocation Management System</h2>
+          </div>
+        </header>
+        {/* form content */}
+        <main className="border border-red-400 max-w-xl">
+          <div className="border border-red-800">
+            <h1 className="font-sans text-2xl font-semibold text-green-600">
+              Sign In
+            </h1>
+            <h3 className="text-xs text-gray-400">
+              To access your dashboard, Sign in is required.
+            </h3>
+          </div>
+
+        </main>
+      </div>
+      <div className="w-full bg-green-400">Image</div>
     </div>
   );
 }
